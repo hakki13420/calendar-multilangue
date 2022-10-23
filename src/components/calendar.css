@@ -1,0 +1,68 @@
+.days{
+    display: flex;
+    gap: 10px;
+}
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+/* .month-wraper:hover{
+    transform: translateY(10px) scale(1.02); 
+} */
+
+.days, .monthName{
+    background: teal;
+    padding: 5px 10px;
+    font-size: 11px;
+    transition: .4s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;        
+}
+.month{
+    width: 380px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    padding: 10px;
+    height: 250px;    
+    min-height: 250px;
+    background: #999; 
+    cursor: pointer;
+}
+
+.day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*==============================*/
+.monthName{
+    font-size: 24px;   
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+/*==============================*/
+.languages{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #666;
+}
+.languages select{
+    width: 300px;
+    appearance: button;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    padding:5px 20px;  
+    border:none;
+    cursor: pointer;
+}

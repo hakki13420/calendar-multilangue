@@ -9,7 +9,7 @@ export default function DaysName() {
 
   
   return (
-    <div className="days" style={local=='ar-AR'?{fontSize:16+'px'}:null} >
+    <div className={local=='ar-AR'?"daysAr":"days"} >
         {          
             dayNames.map(day=>{
               console.log(local)

@@ -25,6 +25,16 @@
     align-items: center;
     gap: 15px;        
 }
+.daysAr{
+    background: teal;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: .4s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;        
+}
 .month{
     width: 380px;
     display: grid;
@@ -65,5 +75,54 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     padding:5px 20px;  
     border:none;
-    cursor: pointer;
+    cursor: pointer;    
+}
+
+/*======================================*/
+
+@media screen and (max-width:992px) {
+    .languages{             
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }   
+}
+@media screen and (max-width:400px) {
+    .languages select{             
+        width: 200px;
+    }   
+    .month{
+        width: 300px;
+        gap: 3px;
+        padding: 5px;
+    }
+    .days, .monthName{
+        padding: 5px 10px;
+        font-size: 10px;
+        gap: 9px;        
+    }
+    .daysAr{     
+        padding: 5px 10px;
+        font-size: 12px;
+        gap: 15px;        
+    }
+}
+
+@media screen and (max-width:310px) {
+    
+    .month{
+        width: 250px;
+        gap: 2px;
+        padding: 3px;
+    }
+    .days, .monthName{
+        padding: 2px 5px;
+        font-size: 9px;
+        gap: 7px;        
+    }
+    .daysAr{     
+        padding: 5px 8px;
+        font-size: 10px;
+        gap: 12px;        
+    }
 }

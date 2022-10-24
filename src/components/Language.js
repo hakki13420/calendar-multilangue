@@ -20,7 +20,6 @@ export default function Language() {
   
   const onChangeHandlYear=(e)=>{
     setActualYear(e.target.value)
-    console.log(actualYear)
   }
   return (
     <div className="languages">

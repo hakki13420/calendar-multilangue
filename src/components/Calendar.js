@@ -21,7 +21,7 @@ export default function Calendar() {
    
 
   return (
-    <div className='calendar-wrapper'>      
+    <div className='calendar-wrapper' style={local=="ar-AR"?{direction:'rtl'}:null}>      
       <lanContext.Provider value={{local,setLocal}}>
       <yearContext.Provider value={{actualYear, setActualYear}}>
       <Language />      
